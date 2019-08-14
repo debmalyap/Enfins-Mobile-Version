@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/memberGridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="15dp"
+    android:padding="10dp"
+    android:background="@drawable/grid_list_bg"
+    android:layout_column="1"
+    android:layout_row="5"
+    android:numColumns="auto_fit">
+
+    <!--1st row-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textMemberCode"
+            android:layout_width="180dp"
+            android:layout_height="32dp"
+            android:drawableStart="@drawable/outline_poll_black_36dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="5dp"
+            android:textColor="#414141"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!--Member Name Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textMemberName"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:drawableStart="@drawable/outline_account_box_black_36dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="5dp"
+            android:textColor="#414141"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+    <!--End of Member Name -->
+
+    <!--2nd row-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textMemberAadhar"
+            android:layout_width="180dp"
+            android:layout_height="32dp"
+            android:drawableStart="@drawable/aadhar"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="5dp"
+            android:textColor="#414141"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+    <!--Gurdain Name Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/textMemberGuardianName"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:drawableStart="@drawable/guardian"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="2dp"
+            android:textColor="#414141"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    <!--End of Gurdain Name-->
+
+    <!--3rd row-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textMemberCollectionPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/outline_location_on_black_36dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="5dp"
+            android:textColor="#414141"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+    <!--Visit Status Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textMemberVisitStatus"
+            android:layout_width="157dp"
+            android:layout_height="32dp"
+            android:drawableStart="@drawable/outline_assistant_black_36dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="5dp"
+            android:textColor="#414141"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+    <!--End of Visit Status-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/memberCreditCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/info_btn_bg"
+            android:text="Check"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_marginEnd="5dp"
+            android:drawableStart="@drawable/outline_info_white_36dp"
+            android:layout_gravity="end"/>
+
+        <Button
+            android:id="@+id/buttonDownloadMemberCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Info"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:background="@drawable/download_btn_bg"
+            android:padding="5dp"
+            android:layout_marginEnd="5dp"
+            android:drawableStart="@drawable/outline_picture_as_pdf_white_36dp"/>
+
+        <Button
+            android:id="@+id/buttonLocationMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Location"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:background="@drawable/edit_btn_bg"
+            android:padding="5dp"
+            android:layout_marginEnd="5dp"
+            android:drawableStart="@drawable/outline_map_white_36dp"/>
+
+        <Button
+            android:id="@+id/buttonEditMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:background="@drawable/edit_btn_bg"
+            android:padding="5dp"
+            android:drawableStart="@drawable/outline_border_color_white_36dp"/>
+
+    </LinearLayout>
+
+</GridLayout>

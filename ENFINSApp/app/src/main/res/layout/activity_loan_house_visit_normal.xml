@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoanHouseVisitActivity">
+
+    <LinearLayout
+        android:id="@+id/House_visit_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:gravity="center_vertical"
+        android:background="#2595EB"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Member House Visit"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/houseVisit_Borrower_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="-5dp"
+        app:layout_constraintTop_toBottomOf="@+id/House_visit_Title"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8dp"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_margin="5dp"
+                android:textColorHint="#000">
+
+                <EditText
+                    android:id="@+id/houseVisit_Application_No"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:hint="Application No"
+                    android:inputType="textPersonName"
+                    android:focusable="false"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_margin="5dp"
+                android:textColorHint="#000">
+
+                <EditText
+                    android:id="@+id/houseVisit_Borrower_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:hint="Borrower Name"
+                    android:focusable="false"
+                    android:inputType="textPersonName"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#000"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginTop="-15dp"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight=".5"
+                android:textColorHint="#000">
+
+                <EditText
+                    android:id="@+id/houseVisit_Loan_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:focusable="false"
+                    android:hint="Loan product"
+                    android:layout_marginTop="-19dp"
+                    android:inputType="textPersonName"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight=".5"-->
+            <!--android:textColorHint="#000">-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/houseVisit_Loan_purpose"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:focusable="false"-->
+            <!--android:hint="Loan purpose"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:paddingBottom="5dp"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="16sp" />-->
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+        </LinearLayout>
+
+        <!--Loan Purpose Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="-19dp"
+            android:layout_marginBottom="-5dp"
+            android:paddingTop="0dp">
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight=".5"
+                android:layout_marginTop="-19dp"
+                android:textColorHint="#000">
+
+                <EditText
+                    android:id="@+id/houseVisit_Loan_purpose"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:focusable="false"
+                    android:hint="Loan purpose"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="-19dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+        <!--End of Loan Purpose Layout-->
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/houseVisit_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="-10dp"
+        android:paddingBottom="20dp"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toTopOf="@+id/allButtonsId"
+        app:layout_constraintTop_toBottomOf="@+id/houseVisit_Borrower_data"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <!--Layout for Total Score and Buttons-->
+    <LinearLayout
+        android:id="@+id/allButtonsId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Score = "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/houseVisitTotalScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/houseVisitSaveButton"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/save_btn"
+                android:text="SAVE"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/houseVisitCancelButton"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/cancel_btn"
+                android:text="CANCEL"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/houseVisitSubmitButton"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/download_btn_bg"
+                android:text="SUBMIT"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--End of Total Score and Buttons Layout-->
+
+    <!--Total Score Layout-->
+
+    <!--End of Score Layout-->
+
+    <!--Buttons Layout-->
+    <!--End of Buttons-->
+
+</android.support.constraint.ConstraintLayout>

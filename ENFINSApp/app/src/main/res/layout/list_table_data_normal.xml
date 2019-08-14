@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/cpNameId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cell_shape"
+            android:padding="5dp"
+            android:text="Madhyamgram"
+            android:gravity="center_vertical"
+            android:textAlignment="center" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <!--<TextView-->
+            <!--android:id="@+id/cpNameId"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/cell_shape"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="Madhyamgram"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textAlignment="center" />-->
+
+        <TableLayout
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TableRow>
+                <TextView
+
+                    android:layout_weight="1"
+                    android:text="Pri. Dem"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/cell_shape_subheader"
+                    />
+                <TextView
+
+                    android:layout_weight="1"
+                    android:text="Inst. Dem"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/cell_shape_subheader"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/principalDemandId"
+                    android:layout_weight="1"
+                    android:text="100"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/cell_shape"
+                    />
+                <TextView
+                    android:id="@+id/interestDemandId"
+                    android:layout_weight="1"
+                    android:text="100"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/cell_shape"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/totalDemandId2"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/cell_shape"
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TableRow>
+                <TextView
+
+                    android:layout_weight="1"
+                    android:text="Pri. Coll"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/cell_shape_subheader"
+                    />
+                <TextView
+
+                    android:layout_weight="1"
+                    android:text="Inst. Coll"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/cell_shape_subheader"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/principalCollectionId"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/cell_shape"
+                    />
+                <TextView
+                    android:id="@+id/interestCollectionId"
+                    android:layout_weight="1"
+                    android:text="100"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/cell_shape"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/totalCollectionId2"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/cell_shape"
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+    </TableRow>
+
+</TableLayout>

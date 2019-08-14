@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemandCollectionPosting">
+
+    <!--Layout for title-->
+    <LinearLayout
+        android:id="@+id/titleDemandCollectionPosting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="#2595EB"
+        android:padding="16dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Demands Collection And Posting"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <!--End of layout for title-->
+
+    <!--Layout for collection date and collection day-->
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightDarkWhite"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/titleDemandCollectionPosting"
+        tools:layout_editor_absoluteX="16dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/demand_collection_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5">
+
+            <EditText
+                android:id="@+id/demandCollection_date"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_margin="5dp"
+                android:drawablePadding="10dp"
+                android:hint="Collection Date"
+                android:inputType="date"
+                android:drawableStart="@drawable/outline_event_black_36dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:textSize="16sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5">
+
+            <EditText
+                android:id="@+id/demandCollection_day"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_margin="5dp"
+                android:drawablePadding="10dp"
+                android:hint="Collection For"
+                android:inputType="textPersonName"
+                android:drawableStart="@drawable/outline_event_black_36dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:textSize="16sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+    <!--End of layout for collection date and collection day-->
+
+    <!--Recycler view layout-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="jahgdjhasd"/>-->
+
+        <ProgressBar
+            android:id="@+id/progressbarDemandCollection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp" />
+
+    </RelativeLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/firstRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="232dp"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+    <!--End of recycler view-->
+
+</android.support.constraint.ConstraintLayout>

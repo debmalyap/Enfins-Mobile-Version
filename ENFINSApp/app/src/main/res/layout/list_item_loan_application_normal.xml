@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/grid_list_bg"
+    android:layout_column="1"
+    android:layout_row="6"
+    android:orientation="vertical">
+
+    <!--1st Linear Layout-->
+    <LinearLayout
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textApplicationNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:drawableStart="@drawable/outline_poll_black_36dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="4sp"
+            android:gravity="center_vertical"
+            android:textColor="#414141"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <!--End of 1st Layout-->
+
+    <!--Application Date Layout-->
+    <LinearLayout
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/textApplicationDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:drawableStart="@drawable/outline_event_black_36dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="4sp"
+            android:gravity="center_vertical"
+            android:textColor="#414141"
+            android:textSize="15sp"
+            android:layout_marginEnd="5dp"/>
+
+    </LinearLayout>
+    <!--End of Application Date Layout-->
+
+    <!--Branch Layout-->
+    <LinearLayout
+        android:layout_column="0"
+        android:layout_row="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textBranch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/outline_account_balance_black_36dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="4sp"
+            android:gravity="center_vertical"
+            android:textColor="#414141"
+            android:textSize="15sp"
+            android:layout_marginEnd="5dp"/>
+
+    </LinearLayout>
+    <!--End of Branch Layout-->
+
+    <!--Collection Point Layout-->
+    <LinearLayout
+        android:layout_column="0"
+        android:layout_row="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/textCollectionPoint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:drawableStart="@drawable/outline_location_on_black_36dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="4sp"
+            android:textColor="#414141"
+            android:textSize="15sp" />
+
+
+
+    </LinearLayout>
+    <!--End of Collection Point Layout-->
+
+    <!--Loan Officer Layout-->
+    <LinearLayout
+        android:layout_column="0"
+        android:layout_row="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textLoanOfficer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:drawableStart="@drawable/outline_account_box_black_36dp"
+            android:drawablePadding="5dp"
+            android:lineSpacingExtra="4sp"
+            android:gravity="center_vertical"
+            android:textColor="#414141"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <!--End of Loan Officer Layout-->
+
+    <!--Borrower Name Layout-->
+    <LinearLayout
+        android:layout_column="0"
+        android:layout_row="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textBorrowerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/outline_account_box_black_36dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="4sp"
+            android:gravity="center_vertical"
+            android:textColor="#414141"
+            android:textSize="15sp"
+            android:layout_marginEnd="5dp"/>
+
+    </LinearLayout>
+    <!--End of Borrower Name-->
+
+    <!--Co-borrower Name Layout-->
+    <LinearLayout
+        android:layout_column="0"
+        android:layout_row="6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textCoBorrowerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/guardian"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="4sp"
+            android:gravity="center_vertical"
+            android:textColor="#414141"
+            android:textSize="15sp"
+            android:layout_marginEnd="5dp"/>
+
+    </LinearLayout>
+    <!--End of Co-borrower Name-->
+
+    <!--Loan Product Layout-->
+    <LinearLayout
+        android:layout_column="0"
+        android:layout_row="7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textLoanProduct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:drawableStart="@drawable/loan"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="4sp"
+            android:gravity="center_vertical"
+            android:textColor="#414141"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <!--End of Loan Product-->
+
+    <!--Loan Purpose Layout-->
+    <LinearLayout
+        android:layout_column="0"
+        android:layout_row="8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textLoanPurpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:drawableStart="@drawable/outline_assignment_turned_in_black_36dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="4sp"
+            android:gravity="center_vertical"
+            android:textColor="#414141"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+    <!--End of Loan Purpose-->
+
+    <!--House Visit Status Layout-->
+    <LinearLayout
+        android:layout_column="0"
+        android:layout_row="9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="464dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:drawableStart="@drawable/house"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="4sp"
+            android:textColor="#414141"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <!--End of House Visit Status-->
+
+
+    <LinearLayout
+        android:layout_column="0"
+        android:layout_row="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/buttonEditLoan"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/edit_btn_bg"
+            android:textColor="@color/white"
+            android:text="Edit"
+            android:textSize="18sp"
+            android:padding="2dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/outline_border_color_white_36dp" />
+
+        <ImageButton
+            android:id="@+id/buttonPendingHouseVisit"
+            android:text="House Visit"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/edit_btn_bg"
+            android:contentDescription="Edit"
+            android:padding="2dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/outline_border_color_white_36dp" />
+
+    </LinearLayout>
+
+
+
+</GridLayout>

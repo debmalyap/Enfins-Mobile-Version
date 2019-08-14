@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/creditSummaryDetailsGridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="15dp"
+    android:padding="10dp"
+    android:background="@drawable/grid_list_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_column="1"
+    android:layout_row="3"
+    android:numColumns="auto_fit">
+
+    <!--1st row for credit checking date-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/creditCheckDate"
+            android:layout_width="200dp"
+            android:layout_height="32dp"
+            android:drawableStart="@drawable/outline_event_black_36dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="5dp"
+            android:textColor="#414141"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/creditOrganizationName"
+            android:layout_width="200dp"
+            android:layout_height="32dp"
+            android:drawableStart="@drawable/outline_account_balance_black_36dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="5dp"
+            android:textColor="#414141"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/buttonDownloadMemberCreditDetail"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/download_btn_bg"
+            android:padding="5dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/outline_picture_as_pdf_white_36dp"
+            android:contentDescription="Download PDF"/>
+
+    </LinearLayout>
+
+
+
+
+
+</GridLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemberEligibityCheckActivity">
+
+    <LinearLayout
+        android:id="@+id/titleEligibilityCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="#2595EB"
+        android:padding="16dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="List of Members with Eligibility"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightDarkWhite"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/titleEligibilityCheck"
+        tools:layout_editor_absoluteX="16dp">
+
+        <EditText
+            android:id="@+id/searchMemberEligibityName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="45"
+            android:background="@drawable/editer_bg"
+            android:hint="Search by Name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/searchMemberEligibityAadhar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="45"
+            android:background="@drawable/editer_bg"
+            android:hint="Search by Aadhar No"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/searchMemberEligibity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="10"
+            android:background="@drawable/download_btn_bg"
+            android:contentDescription="Search"
+            android:padding="5dp"
+            android:src="@drawable/baseline_search_white_36dp"
+            android:text="Search" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewMembersEligibity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13"
+        tools:layout_editor_absoluteX="-16dp" />
+
+</android.support.constraint.ConstraintLayout>

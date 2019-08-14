@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.qbent.enfinsapp"
+    >
+
+    <supports-screens android:resizeable = "true"
+        android:smallScreens = "true"
+        android:normalScreens = "true"
+        android:largeScreens = "true"
+        android:xlargeScreens = "true"
+        android:anyDensity = "true" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:testOnly="false"
+        android:debuggable="true"
+        tools:ignore="HardcodedDebugMode">
+        <activity android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".UnauthorisedActivity" />
+        <activity android:name=".WorkingDateActivity" />
+        <activity
+            android:name=".OverdueReportActvity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CollectionSheetActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PartyLedgerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DemandCollectionPosting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CollectionAdjustmentAndCloseLoan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TrialBalanceReport"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoanPredisbursedReport"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DemandVsCollectionReport"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoanDisbusedReportActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChangePassword"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ScheduleCalculatorActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoanHouseVisitActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MemberEditActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CreditSummaryDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PartPaymentCollectionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PrecloseLoanActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OverdueCollectionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdvancedCollectionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoanApplicationDetailsAddActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MemberEligibityDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MemberEligibityCheckActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CreditDataCheckActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoanApplicationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QBarCodeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MemberDeatilsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MemberActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CollectionPointDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CollectionPointListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

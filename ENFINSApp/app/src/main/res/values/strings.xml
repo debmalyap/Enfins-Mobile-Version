@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">DCCL</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Change Working Date</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_collection_point">Collection Point</string>
+    <string name="menu_member">Member</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_logout">Log Out</string>
+    <string-array name="collection_days">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="visit_status">
+        <item>Interested</item>
+        <item>Not-Interested</item>
+        <item>Follow Up</item>
+    </string-array>
+
+    <string-array name="relationship">
+        <item>HUSBAND</item>
+        <item>WIFE</item>
+        <item>SON</item>
+        <item>DAUGHTER</item>
+        <item>BROTHER</item>
+        <item>SISTER</item>
+        <item>FATHER</item>
+        <item>MOTHER</item>
+    </string-array>
+
+    <string-array name="poverty_level">
+        <item>APL</item>
+        <item>BPL</item>
+    </string-array>
+
+    <string-array name="instalment">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="type">
+        <item>Details</item>
+        <item>Summary</item>
+    </string-array>
+
+    <string-array name="loan_tenure">
+        <item>12</item>
+        <item>18</item>
+        <item>24</item>
+        <item>30</item>
+        <item>36</item>
+        <item>42</item>
+        <item>48</item>
+    </string-array>
+    <string-array name="maritalStatus">
+        <item>Select Marital Status</item>
+        <item>Married</item>
+        <item>Unmarried</item>
+    </string-array>
+
+    <string-array name="religions">
+        <item>Select Religions</item>
+        <item>Hinduism</item>
+        <item>Islam</item>
+        <item>Christianity</item>
+        <item>Sikhism</item>
+        <item>Buddhism</item>
+    </string-array>
+
+    <string-array name="castes">
+        <item>Select Castes</item>
+        <item>General</item>
+        <item>OBC</item>
+        <item>SC</item>
+        <item>ST</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Interested</item>
+        <item>Not-Interested</item>
+        <item>Follow Up</item>
+    </string-array>
+
+    <string name="header_cp_list">List of Collection Points</string>
+    <string name="header_cp_add_list">Add New Collection Point</string>
+    <string name="header_member_list">List of Members</string>
+    <string name="form_collection_name">NAME</string>
+    <string name="form_collection_formation">FORMATION DATE</string>
+    <string name="form_collection_address">ADDRESS</string>
+    <string name="form_collection_zip">PINCODE</string>
+    <string name="form_collection_place">PLACE</string>
+    <string name="form_collection_phone">MOBILE NO.</string>
+    <string name="form_cdc_title">Credit Data Checking</string>
+
+    <string name="save_btn">SAVE</string>
+    <string name="cancel_btn">BACK</string>
+</resources>

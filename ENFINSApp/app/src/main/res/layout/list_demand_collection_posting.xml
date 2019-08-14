@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/accord_title_bg"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/demand_collection_point_names_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Collection Point Name"
+                android:drawableEnd="@drawable/outline_add_circle_outline_white_36dp"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/expandable_demand_collection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/secondRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+            </android.support.v7.widget.RecyclerView>
+
+
+            <!--Collected Amount Layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@color/lightDarkWhite"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <EditText
+                        android:id="@+id/demand_Collected_amt"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_margin="5dp"
+                        android:hint="Collected Amount"
+                        android:inputType="number"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="16sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+            </LinearLayout>
+            <!--End of Collected Amount-->
+
+            <!--Buttons Layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@color/lightDarkWhite"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/demand_Collection_save_update"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/save_btn"
+                    android:text="SAVE"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:drawableStart="@drawable/outline_save_white_36dp"/>
+
+                <Button
+                    android:id="@+id/demand_Collection_back"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/cancel_btn"
+                    android:text="CANCEL"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:drawableStart="@drawable/outline_settings_backup_restore_white_36dp"/>
+
+            </LinearLayout>
+            <!--End of Button Layout-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

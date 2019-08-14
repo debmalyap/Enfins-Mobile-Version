@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreditDataCheckActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="#2595EB"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/form_cdc_title"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:layout_marginTop="130dp"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/motherLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:id="@+id/row1"
+                style="@style/FormRowTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/row1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loan Product"
+                    style="@style/TextView.InputLabel"
+                    />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spinnerLoanProduct"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:paddingBottom="15dp"
+                    android:spinnerMode="dialog"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row2"
+                style="@style/FormRowTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Credit Organization"
+                    style="@style/TextView.InputLabel"
+                    />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spinnerCreditOrganization"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="match_parent"
+                    android:clickable="false"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:paddingBottom="15dp"
+                    android:spinnerMode="dialog"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/row3"
+                style="@style/FormRowTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/row2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Applied Amount"
+                        android:textSize="12sp"/>
+
+                    <EditText
+                        android:id="@+id/editTextAppliedAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_margin="5dp"
+                        android:drawablePadding="10dp"
+                        android:inputType="number"
+                        android:focusable="false"
+                        android:drawableStart="@drawable/money"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Interest Rate"
+                        android:textSize="12sp"/>
+
+                    <EditText
+                        android:id="@+id/editTextInterestRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_margin="5dp"
+                        android:drawablePadding="10dp"
+                        android:inputType="numberDecimal"
+                        android:focusable="false"
+                        android:drawableStart="@drawable/intereste"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="8dp"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/row4"
+                style="@style/FormRowTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/row3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Installment Period"
+                    style="@style/TextView.InputLabel"
+                    />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spinnerInstallment"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:paddingBottom="15dp"
+                    android:spinnerMode="dialog"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row5"
+                style="@style/FormRowTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/row4">
+
+                <Button
+                    android:id="@+id/saveCreditData"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save_btn"
+                    android:background="@drawable/save_btn"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/outline_save_white_36dp"/>
+
+                <Button
+                    android:id="@+id/backToMember"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel_btn"
+                    android:background="@drawable/cancel_btn"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/outline_settings_backup_restore_white_36dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

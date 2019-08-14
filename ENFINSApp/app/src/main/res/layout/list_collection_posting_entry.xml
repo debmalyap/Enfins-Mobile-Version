@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/demand_collection_child_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  "
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_bar_bg"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/loanBondNumberId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Loan Bond No: 12345678102"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Borrower Name Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/demand_Borrower_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:hint="Borrower And Co-Borrower Name"
+                    android:text="Anurag Patra/Ram Chandra Patra"
+                    android:inputType="textPersonName"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+        <!--End of Borrower Name Layout-->
+
+
+        <!--Loan Product Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/demand_Loan_Product"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:hint="Loan Product"
+                    android:text="SMALL BUSINESS LOAN - WEEKLY"
+                    android:inputType="textPersonName"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+        <!--End of Loan Product-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/demand_Loan_Amt"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:hint="Amount"
+                    android:text="20,000.00"
+                    android:inputType="textPersonName"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/demand_Outstanding_Amt"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:hint="Outstanding"
+                    android:text="21,377.00"
+                    android:inputType="textPersonName"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/demand_Installment_No"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:hint="Instal.No."
+                    android:text="40"
+                    android:inputType="number"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/demand_Installment_Amt"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:hint="Instal.Amt."
+                    android:text="650.00"
+                    android:inputType="textPersonName"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/demand_ODPriAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:hint="OD Pri. Amt"
+                    android:text="00.00"
+                    android:inputType="textPersonName"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/demand_ODIntAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:hint="OD Int. Amt"
+                    android:text="00.00"
+                    android:inputType="textPersonName"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/demand_PrinAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:hint="Prin. Amt"
+                    android:text="550.00"
+                    android:inputType="textPersonName"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/demand_IntAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:hint="Int. Amt"
+                    android:text="100.00"
+                    android:inputType="textPersonName"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.3">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/demand_PaidAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:hint="Paid. Amt"
+                    android:inputType="number"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.7">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/demand_Remarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:hint="Remarks"
+                    android:inputType="textPersonName"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/isMemberPresent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_gravity="center_vertical"
+                android:text="Is Mem. Prsnt"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/demand_Status"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:hint="Status"
+                    android:text="Collection Pending"
+                    android:inputType="textPersonName"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

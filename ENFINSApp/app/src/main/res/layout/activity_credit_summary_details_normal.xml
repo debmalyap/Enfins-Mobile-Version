@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreditSummaryDetailsActivity">
+
+    <TextView
+        android:id="@+id/textCreditSummaryDetailsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Credit Summary Details"
+        android:textColor="#ffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:background="#2595EB"
+        android:layout_marginTop="60dp"
+        android:gravity="fill_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textCreditSummaryNoData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="No Data Found"
+        android:textColor="#FF0000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:layout_marginTop="120dp"
+        android:gravity="fill_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewCreditSummaryDetails"
+        android:layout_width="750dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@+id/textCreditSummaryDetailsHeader"
+        tools:layout_editor_absoluteX="-88dp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/row5"
+        style="@style/FormRowTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewCreditSummaryDetails">
+
+        <Button
+            android:id="@+id/backToMemberSummary"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_btn"
+            android:background="@drawable/cancel_btn"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/outline_settings_backup_restore_white_36dp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

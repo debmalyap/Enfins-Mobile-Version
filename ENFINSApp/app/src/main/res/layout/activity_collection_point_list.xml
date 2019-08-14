@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="56dp"
+        android:background="#2595EB">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/header_cp_list"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="16dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:background="@color/lightDarkWhite">
+
+        <EditText
+            android:id="@+id/searchCollectionPointNameId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:ems="10"
+            android:textSize="20sp"
+            android:background="@drawable/editer_bg"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:inputType="textPersonName"
+            android:hint="Search by C.P Name"/>
+
+        <Button
+            android:id="@+id/searchCollectionPointButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:background="@drawable/download_btn_bg"
+            android:drawableStart="@drawable/baseline_search_white_36dp"
+            android:contentDescription="Search"
+            />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewCollectionPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:layout_below="@+id/search_bar"/>
+
+
+</RelativeLayout>
+
+
+
+
+

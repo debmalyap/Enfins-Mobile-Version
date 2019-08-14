@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".LoanApplicationDetailsAddActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/loanApplicationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="#2595EB"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/loanApplicationHeaderId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Add New Loan Application"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/loanApplicationTitle">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--1st form section-->
+            <LinearLayout
+                android:id="@+id/loanFirstLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/accord_title_bg"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/loanFirstLayoutText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Loan Details"
+                    android:drawableEnd="@drawable/outline_remove_circle_outline_white_36dp"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/loanFirstLayoutForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:id="@+id/Layout1"
+                    style="@style/FormRowTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="0dp"
+                    app:layout_constraintTop_toBottomOf="@+id/list1">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5">
+
+                        <EditText
+                            android:id="@+id/applicationNumberId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:drawablePadding="10dp"
+                            android:hint="Application Number"
+                            android:inputType="textPersonName"
+                            android:focusable = "false"
+                            android:drawableStart="@drawable/outline_poll_black_36dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5">
+
+                        <EditText
+                            android:id="@+id/loanApprovedAmountId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:drawablePadding="10dp"
+                            android:hint="Approved Amount"
+                            android:inputType="textPersonName"
+                            android:focusable = "false"
+                            android:drawableStart="@drawable/money"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Layout2"
+                    style="@style/FormRowTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/Layout1">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5">
+
+                        <EditText
+                            android:id="@+id/approvedInterestId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:drawablePadding="10dp"
+                            android:hint="Approved Interest"
+                            android:inputType="textPersonName"
+                            android:focusable = "false"
+                            android:drawableStart="@drawable/intereste"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".33">
+
+                        <EditText
+                            android:id="@+id/loanApprovedInstallmentPeriodId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:drawablePadding="10dp"
+                            android:hint="Approved Installment Period"
+                            android:inputType="number"
+                            android:focusable = "false"
+                            android:drawableStart="@drawable/outline_timeline_black_36dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <!--Approved Amount Layout-->
+
+                <!--End of Approved Amount-->
+
+                <LinearLayout
+                    android:id="@+id/Layout3"
+                    style="@style/FormRowTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/Layout2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Collection Day"
+                            style="@style/TextView.InputLabel"
+                            />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/collectionDaySpinnerId"
+                            style="@style/SpinnerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:paddingBottom="16dp"
+                            android:spinnerMode="dialog"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Collection Point Name"
+                            style="@style/TextView.InputLabel"
+                            />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/collectionPointNameSpinnerId"
+                            style="@style/SpinnerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:paddingBottom="16dp"
+                            android:spinnerMode="dialog"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Layout4"
+                    style="@style/FormRowTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/Layout3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Loan Product"
+                            style="@style/TextView.InputLabel"
+                            />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/loanProductSpinnerId"
+                            style="@style/SpinnerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:paddingBottom="16dp"
+                            android:spinnerMode="dialog"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/borrowerNameId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:hint="Borrower Name"
+                                android:focusable = "false"
+                                android:drawableStart="@drawable/outline_account_box_black_36dp"
+                                android:drawablePadding="10dp"
+                                android:inputType="textPersonName"
+                                android:textSize="16sp"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Layout5"
+                    style="@style/FormRowTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/Layout4">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/coBorrowerNameId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:hint="Co-Borrower Name"
+                                android:focusable = "false"
+                                android:drawableStart="@drawable/outline_account_box_black_36dp"
+                                android:drawablePadding="10dp"
+                                android:inputType="textPersonName"
+                                android:textSize="16sp"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Relation"
+                            style="@style/TextView.InputLabel"
+                            />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/relationSpinnerId"
+                            style="@style/SpinnerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:paddingBottom="16dp"
+                            android:spinnerMode="dialog"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Layout6"
+                    style="@style/FormRowTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/Layout5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Loan Purpose"
+                            style="@style/TextView.InputLabel"
+                            />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/loanPurposeSpinnerId"
+                            style="@style/SpinnerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:paddingBottom="16dp"
+                            android:spinnerMode="dialog"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Loan Sub Purpose"
+                            style="@style/TextView.InputLabel"
+                            />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/loanSubPurposeSpinnerId"
+                            style="@style/SpinnerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:paddingBottom="16dp"
+                            android:spinnerMode="dialog"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <!--2nd form section-->
+            <LinearLayout
+                android:id="@+id/loanSecondLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/accord_title_bg"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/loanSecondLayoutText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Bank Details"
+                    android:drawableEnd="@drawable/outline_remove_circle_outline_white_36dp"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/loanSecondLayoutForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/Layout7"
+                    style="@style/FormRowTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="0dp"
+                    app:layout_constraintTop_toBottomOf="@+id/list2"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bank Name"
+                            style="@style/TextView.InputLabel"
+                            />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/bankNameId"
+                            style="@style/SpinnerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:paddingBottom="16dp"
+                            android:spinnerMode="dialog"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Layout8"
+                    style="@style/FormRowTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/Layout7">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/branchNameId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:hint="Branch Name"
+                                android:focusable = "false"
+                                android:drawableStart="@drawable/outline_account_balance_black_36dp"
+                                android:drawablePadding="10dp"
+                                android:inputType="textPersonName"
+                                android:textSize="16sp"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Layout9"
+                    style="@style/FormRowTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/Layout8">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5">
+
+                        <EditText
+                            android:id="@+id/transDateId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:drawablePadding="10dp"
+                            android:hint="Last Transaction Date"
+                            android:inputType="date"
+                            android:focusable = "false"
+                            android:drawableStart="@drawable/outline_event_black_36dp"
+                            android:drawableEnd="@drawable/outline_keyboard_arrow_down_black_36dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".33">
+
+                        <EditText
+                            android:id="@+id/ifscCodeId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:drawablePadding="10dp"
+                            android:hint="IFSC Code"
+                            android:inputType="textPersonName"
+                            android:focusable = "false"
+                            android:drawableStart="@drawable/outline_poll_black_36dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Layout10"
+                    style="@style/FormRowTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/Layout9">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/passbookNameId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:drawablePadding="10dp"
+                            android:hint="Name As Per Passbook"
+                            android:inputType="textPersonName"
+                            android:focusable = "false"
+                            android:drawableStart="@drawable/outline_account_box_black_36dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Layout11"
+                    style="@style/FormRowTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/Layout10">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/accountNumberId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:drawablePadding="10dp"
+                            android:hint="Account Number"
+                            android:inputType="number"
+                            android:focusable = "false"
+                            android:drawableStart="@drawable/outline_account_balance_wallet_black_36dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LayoutPassBookView"
+                    style="@style/FormRowTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/Layout11">
+
+
+                    <RelativeLayout
+                        android:layout_width="351dp"
+                        android:layout_height="145dp">
+
+                        <ImageView
+                            android:id="@+id/passBookImage"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/img_bg"
+                            android:src="@drawable/dummy_upload_img"/>
+
+                        <ImageButton
+                            android:id="@+id/interestedImageId2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/upload_success"
+                            android:padding="16dp"
+                            android:src="@drawable/interested" />
+
+
+                        <ImageButton
+                            android:id="@+id/passBookUpload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/img_upload_btn_bg"
+                            android:padding="16dp"
+                            android:src="@drawable/outline_camera_enhance_black_18dp" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/uploadLoanApplicationButton"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="UPLOAD"
+                        android:background="@drawable/save_btn"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/outline_save_white_36dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--3rd form section-->
+            <LinearLayout
+                android:id="@+id/loanThirdLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/accord_title_bg"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/loanThirdLayoutText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Income Details"
+                    android:drawableEnd="@drawable/outline_remove_circle_outline_white_36dp"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/loanThirdLayoutForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/Layout12"
+                    style="@style/FormRowTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="0dp"
+                    app:layout_constraintTop_toBottomOf="@+id/loanThirdLayout">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5">
+
+                        <EditText
+                            android:id="@+id/monthlyIncomeId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:drawablePadding="10dp"
+                            android:hint="Monthly Income"
+                            android:inputType="numberDecimal"
+                            android:focusable = "false"
+                            android:drawableStart="@drawable/money"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".33">
+
+                        <EditText
+                            android:id="@+id/monthlyExpenseId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:drawablePadding="10dp"
+                            android:hint="Monthly Expense"
+                            android:inputType="numberDecimal"
+                            android:focusable = "false"
+                            android:drawableStart="@drawable/money"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp"
+                            tools:ignore="DuplicateIds" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Layout13"
+                    style="@style/FormRowTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/Layout12">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5">
+
+                        <EditText
+                            android:id="@+id/monthlyExcessId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:drawablePadding="10dp"
+                            android:hint="Monthly Excess"
+                            android:inputType="numberDecimal"
+                            android:focusable = "false"
+                            android:drawableStart="@drawable/money"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".33">
+
+                        <EditText
+                            android:id="@+id/annualExcessId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:drawablePadding="10dp"
+                            android:hint="Annual Excess"
+                            android:inputType="numberDecimal"
+                            android:focusable = "false"
+                            android:drawableStart="@drawable/money"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Layout14"
+                    style="@style/FormRowTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/Layout13">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5">
+
+                        <EditText
+                            android:id="@+id/currentEmiId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:drawablePadding="10dp"
+                            android:hint="Current EMI"
+                            android:inputType="number"
+                            android:focusable = "false"
+                            android:drawableStart="@drawable/outline_poll_black_36dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".33">
+
+                        <EditText
+                            android:id="@+id/proposedEmiId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:drawablePadding="10dp"
+                            android:hint="Proposed EMI"
+                            android:inputType="number"
+                            android:focusable = "false"
+                            android:drawableStart="@drawable/outline_poll_black_36dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Layout15"
+                    style="@style/FormRowTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/Layout14">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextView.InputLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Poverty Level" />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/povertyLevelId"
+                            style="@style/SpinnerTheme"
+                            android:layout_width="157dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:paddingBottom="16dp"
+                            android:spinnerMode="dialog"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <!--Bpl card number-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".33" />
+
+                        <EditText
+                            android:id="@+id/bplCardId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:drawableStart="@drawable/outline_poll_black_36dp"
+                            android:drawablePadding="10dp"
+                            android:hint="BPL Card Number"
+                            android:focusable = "false"
+                            android:inputType="numberDecimal"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <!--End of Bpl card number-->
+
+                    <!--Remarks field-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".33" />
+
+                        <EditText
+                            android:id="@+id/remarksId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:drawableStart="@drawable/outline_poll_black_36dp"
+                            android:drawablePadding="10dp"
+                            android:hint="Remarks"
+                            android:focusable = "false"
+                            android:inputType="textPersonName"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <!--End of remarks field-->
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/Layout16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="160dp"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@+id/Layout15">
+
+                    <Button
+                        android:id="@+id/submitLoanApplicationButton"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Submit"
+                        android:background="@drawable/save_btn"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/outline_save_white_36dp"/>
+
+                    <Button
+                        android:id="@+id/saveLoanApplicationButton"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/save_btn"
+                        android:background="@drawable/save_btn"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/outline_save_white_36dp"/>
+
+                    <Button
+                        android:id="@+id/cancelLoanApplicationButton"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/cancel_btn"
+                        android:drawableStart="@drawable/outline_settings_backup_restore_white_36dp"
+                        android:drawablePadding="10dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="@string/cancel_btn"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

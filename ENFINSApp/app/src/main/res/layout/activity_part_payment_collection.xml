@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PartPaymentCollectionActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/textPartPaymentCollectionHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Part-Payment Collection"
+        android:textColor="#ffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:background="#2595EB"
+        android:layout_marginTop="60dp"
+        android:gravity="fill_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/grid_list_bg"
+        app:layout_constraintTop_toBottomOf="@+id/textPartPaymentCollectionHeader"
+        tools:layout_editor_absoluteX="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/partPaymentDateId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/outline_event_black_36dp"
+                        android:drawableEnd="@drawable/outline_keyboard_arrow_down_black_36dp"
+                        android:drawablePadding="10dp"
+                        android:hint="Payment Date"
+                        android:inputType="date"
+                        android:focusable="false"
+                        tools:ignore="MissingConstraints"
+                        android:textColor="#000"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <TextView
+                    style="@style/TextView.InputLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Branch Name" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/partBranchNameId"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingBottom="16dp"
+                    android:spinnerMode="dialog"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <TextView
+                style="@style/TextView.InputLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Collection Point Names" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/partCollectionId"
+                style="@style/SpinnerTheme"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_margin="5dp"
+                android:spinnerMode="dialog"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/partLoanBondNoId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/outline_poll_black_36dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Type Loan Bond No."
+                    android:focusable="false"
+                    android:inputType="number"
+                    tools:ignore="MissingConstraints" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <EditText
+                    android:id="@+id/partCollectedAmountId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/money"
+                    android:drawablePadding="10dp"
+                    android:hint="Collected Amount"
+                    android:inputType="number"
+                    android:textStyle="bold"
+                    android:focusable="false"
+                    tools:ignore="MissingConstraints" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/savePartButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/save_btn"
+                android:textColor="@color/white"
+                android:text="save"
+                android:textSize="18sp"
+                android:drawableStart="@drawable/outline_save_white_36dp"/>
+
+            <Button
+                android:id="@+id/cancelPartButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/cancel_btn"
+                android:textColor="@color/white"
+                android:text="cancel"
+                android:textSize="18sp"
+                android:drawableStart="@drawable/outline_settings_backup_restore_white_36dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/collectionPointGridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="15dp"
+    android:padding="10dp"
+    android:background="@drawable/grid_list_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_column="2"
+    android:layout_row="4"
+    android:numColumns="auto_fit">
+
+    <!--1st row-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:drawableStart="@drawable/outline_account_box_black_36dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="5dp"
+            android:textColor="#414141"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <!--2nd row-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:drawableStart="@drawable/outline_location_on_black_36dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="5dp"
+            android:textColor="#414141"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!--3rd row-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textCollectionDay"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/outline_event_black_36dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="5dp"
+            android:textColor="#414141"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:id="@+id/buttonLocationCP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Location"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:background="@drawable/info_btn_bg"
+            android:padding="5dp"
+            android:layout_marginEnd="5dp"
+            android:drawableStart="@drawable/outline_map_white_36dp"/>
+
+
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_row="0"-->
+        <!--android:layout_rowSpan="3"-->
+        <!--android:layout_column="0"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<com.google.android.gms.maps.MapView-->
+            <!--android:id="@+id/mapView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="105dp"-->
+            <!--tools:layout_editor_absoluteX="27dp"-->
+            <!--tools:layout_editor_absoluteY="663dp" />-->
+
+    <!--</LinearLayout>-->
+
+</GridLayout>

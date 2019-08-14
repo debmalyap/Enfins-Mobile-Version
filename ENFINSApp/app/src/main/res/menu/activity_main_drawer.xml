@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Home" />
+
+        <!--Global Management Section-->
+        <item android:title="Global Management">
+            <menu>
+                <item
+                    android:id="@+id/nav_member"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="@string/menu_member" />
+                <item
+                    android:id="@+id/nav_membereligibitycheck"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Member Eligibity Check" />
+            </menu>
+        </item>
+        <!--End of Global Management Section-->
+
+        <!--Loan Management Section-->
+        <item android:title="Loan Management">
+            <menu>
+                <item
+                    android:id="@+id/nav_collection_point"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="@string/menu_collection_point" />
+                <item
+                    android:id="@+id/nav_partyledger"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Party Ledger" />
+                <item
+                    android:id="@+id/nav_loanapplication"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Loan Application" />
+                <item
+                    android:id="@+id/nav_demandcollectionposting"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Demand Collection Posting" />
+
+                <item
+                    android:id="@+id/nav_overduecollection"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Overdue Collection" />
+                <item
+                    android:id="@+id/nav_precloseloan"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Preclose Loan" />
+                <item
+                    android:id="@+id/nav_advancecollection"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Advance Collection" />
+                <item
+                    android:id="@+id/nav_partpaymentcollection"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Part-Payment Collection" />
+                <item
+                    android:id="@+id/nav_schedulecalculator"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Schedule Calculator" />
+
+                <!--<item-->
+                    <!--android:id="@+id/nav_collectionsheet"-->
+                    <!--android:icon="@drawable/ic_menu_slideshow"-->
+                    <!--android:title="Collection Sheet" />-->
+            </menu>
+        </item>
+        <!--End of Loan Management Section-->
+
+        <!--Security Management Section-->
+        <item android:title="Security Management">
+            <menu>
+                <item
+                    android:id="@+id/nav_changepassword"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Change Password" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/icons8_exit_26"
+                    android:title="@string/menu_logout" />
+            </menu>
+        </item>
+        <!--End of Security Management Section-->
+
+        <item android:title="Report Management">
+            <menu>
+
+                <item
+                    android:id="@+id/nav_loandisbusedreport"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Loan Disbursed Report" />
+                <item
+                    android:id="@+id/nav_demandvscollection"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Demand Vs Collection Report" />
+                <item
+                    android:id="@+id/nav_loanpredisbusedreport"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Loan Predisbursed Report" />
+                <item
+                    android:id="@+id/nav_trialbalance"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Trial Balance Report" />
+                <item
+                    android:id="@+id/nav_overduereport"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Overdue Report" />
+                <item
+                    android:id="@+id/nav_adjusment"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Adjusment and Closed Loan Report" />
+                <!--<item-->
+                <!--android:id="@+id/nav_imageselection"-->
+                <!--android:icon="@drawable/ic_menu_slideshow"-->
+                <!--android:title="Select Image" />-->
+            </menu>
+        </item>
+
+
+
+    </group>
+
+
+</menu>
